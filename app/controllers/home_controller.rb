@@ -1,8 +1,9 @@
 class HomeController < ApplicationController
   layout "application"
-  skip_before_action :authenticate_user!, :only => [:index]
+  #skip_before_action :authenticate_user!, :only => [:index]
 
   def index
+
     @freePlaces = Place.where(state: 'free').where(parking_id: current_user.parking_id)
     @feeTypes = FeeType.where(parking_id: current_user.parking_id)
   end
