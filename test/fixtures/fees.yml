@@ -9,6 +9,7 @@
 #  fee_type_id   :integer
 #  vehicle_plate :string
 #  user_id       :integer
+#  place_id      :integer
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
 #
