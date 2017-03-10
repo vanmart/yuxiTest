@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
+* Ruby version 2.3.1
 
 * System dependencies
+  execute bundle install
+
+* Database Postgres
 
 * Configuration
 
-* Database creation
+  *need to run migrations
 
-* Database initialization
+  rake db:migrate
 
-* How to run the test suite
+  *need to seed
 
-* Services (job queues, cache servers, search engines, etc.)
+  rake db:seed
 
-* Deployment instructions
+* currently running on
+  https://parkingyuxitest.herokuapp.com/
 
-* ...
+
+#only
+#if you are having problems with styles run this commands
+
+rails generate bootstrap:install less
+rails generate bootstrap:install static
