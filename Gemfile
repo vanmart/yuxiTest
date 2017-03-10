@@ -39,8 +39,18 @@ gem 'twitter-bootstrap-rails'
 #User Authentication
 gem 'devise'
 
-# pretty alerts
+#Pretty alerts
 gem 'toastr-rails'
+
+# Ajax + files upload
+gem 'remotipart', github: 'mshibuya/remotipart'
+#Administration site
+gem 'rails_admin', '>= 1.0.0.rc'
+
+#User permisions
+gem 'cancancan'
+#User roles
+gem 'rolify'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
