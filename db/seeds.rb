@@ -72,14 +72,14 @@ FeeType.create([{name: 'Hour or fraction Motorbike',price: '5',vehicle_type_id:'
 #TODO: seed the vehicle, vihicle_owner
 
 
-Place.create({name: '1', state: 'ocuppied', vehicle_type_id: '1', parking_id: parking.id})
+Place.create({name: '1', state: 'free', vehicle_type_id: '1', parking_id: parking.id})
 Place.create({name: '2', state: 'free', vehicle_type_id: '1', parking_id: parking.id})
 Place.create({name: '3', state: 'free', vehicle_type_id: '1', parking_id: parking.id})
 Place.create({name: '4', state: 'free', vehicle_type_id: '1', parking_id: parking.id})
 Place.create({name: '5', state: 'free', vehicle_type_id: '1', parking_id: parking.id})
 
-Place.create({name: 'c1', state: 'ocuppied', vehicle_type_id: '2', parking_id: parking.id})
-Place.create({name: 'c2', state: 'ocuppied', vehicle_type_id: '2', parking_id: parking.id})
+Place.create({name: 'c1', state: 'free', vehicle_type_id: '2', parking_id: parking.id})
+Place.create({name: 'c2', state: 'free', vehicle_type_id: '2', parking_id: parking.id})
 Place.create({name: 'c3', state: 'free', vehicle_type_id: '2', parking_id: parking.id})
 Place.create({name: 'c4', state: 'free', vehicle_type_id: '2', parking_id: parking.id})
 Place.create({name: 'c5', state: 'free', vehicle_type_id: '2', parking_id: parking.id})

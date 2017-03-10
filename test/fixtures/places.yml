@@ -3,6 +3,7 @@
 # Table name: places
 #
 #  id              :integer          not null, primary key
+#  name            :string
 #  state           :integer
 #  vehicle_type_id :integer
 #  parking_id      :integer
