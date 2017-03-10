@@ -1,20 +1,17 @@
 # == Schema Information
 #
-# Table name: parkings
+# Table name: fee_times
 #
 #  id         :integer          not null, primary key
 #  name       :string
-#  address    :string
-#  email      :string
-#  phone      :string
-#  message    :text
+#  seconds    :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
 require 'test_helper'
 
-class ParkingTest < ActiveSupport::TestCase
+class FeeTimeTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

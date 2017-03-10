@@ -1,13 +1,10 @@
 # == Schema Information
 #
-# Table name: parkings
+# Table name: fee_times
 #
 #  id         :integer          not null, primary key
 #  name       :string
-#  address    :string
-#  email      :string
-#  phone      :string
-#  message    :text
+#  seconds    :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
@@ -16,14 +13,8 @@
 
 one:
   name: MyString
-  address: MyString
-  email: MyString
-  phone: MyString
-  message: MyText
+  seconds: MyString
 
 two:
   name: MyString
-  address: MyString
-  email: MyString
-  phone: MyString
-  message: MyText
+  seconds: MyString
