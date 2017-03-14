@@ -6,13 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Role.create([{ name: 'Admin' }, { name: 'ParkingAttendant' }, { name: 'MasterAdmin' }])
+Role.create([{ name: 'Admin' }, { name: 'ParkingAttendant' }, { name: 'MasterAdmin' }, { name: 'RegularUser' }])
 
 
 
 #Creating Parkings
 parking = Parking.create({ name: 'la40' , address: 'cra 40', email: 'la40@mail.com', phone: '3134904040', message: 'Bienvenidos atendemos de Lunes a Viernes 6 am - 9pm' })
-parking2 = Parking.create({ name: 'la20' , address: 'cra 20', email: 'la20@mail.com', phone: '3134902020', message: 'Horario Lunes-Domingo 6am-10pm' })
+
 
 admin = User.create({
               email: 'admin@mail.com',

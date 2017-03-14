@@ -23,7 +23,7 @@
                   </li>
                   <li>
                     <% if user_signed_in? %>
-                      <% if !current_user.has_role? :ParkingAttendant %>
+                      <% if current_user.has_any_role? :Admin, :MasterAdmin %>
                         <%= link_to rails_admin_path do %>
                           <i class="fa fa-user-plus" aria-hidden="true"></i> Go to Dashboard
                         <%end%>

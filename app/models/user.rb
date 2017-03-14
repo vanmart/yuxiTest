@@ -26,8 +26,21 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  belongs_to :role
+  before_create :set_default_role
   belongs_to :parking
   has_many :fee
 
-  validates :name, :email, :parking_id, :presence => true
+  validates :email, :presence => true
+  # or
+  # before_validation :set_default_role
+
+  private
+  def set_default_role
+    add_role(:RegularUser)
+    parking = Parking.last.id
+    self.parking_id = parking
+  end
+
+
 end
