@@ -37,7 +37,7 @@
   <div class="row">
     <div class="col-md-6">
 
-      <button type="button" class="btn btn-success button" data-toggle="modal" data-target="#enterModal">Enter</button>
+      <button type="button" class="btn btn-success button" data-toggle="modal" data-target="#enterModal" id="EnterButton">Enter</button>
     </div>
     <div class="col-md-6">
 
@@ -74,7 +74,7 @@
           <div class="modal-footer">
             <label class="pull-left" >Attended by: <%= current_user.name%></label>
             <button type="button" class="btn btn-success" id="saveIncome">Save</button>
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close or cancel</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal" id="CloseCancel">Close</button>
           </div>
         </div>
       </div>
@@ -126,6 +126,18 @@ $('#saveIncome').click(function() {
     saveIncome();
 });
 
+$('#EnterButton').click(function() {
+    $('#feeType_name').val("");
+    $('#vehicle_plate').val("")
+
+});
+
+
+
+$('#CloseCancel').click(function() {
+    location.reload();
+});
+
 $('#saveExit').click(function() {
     saveExit();
 });
@@ -142,6 +154,8 @@ function saveIncome(){
     success: function(data) {
       place = data.name
       $('#freePlace').html(place);
+      $('#saveIncome').hide();
+
     },
     error: function(data) {
       console.log(data);
