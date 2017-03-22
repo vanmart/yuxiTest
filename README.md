@@ -30,12 +30,12 @@
   user:admin@mail.com
   pass:1234321
 
-  ParkingAttendant: can not acces to dashboard - administration site
+  ParkingAttendant: can not acces to dashboard
   user: attendant@mail.com
   pass: 1234321
 
   New Users
-  RegularUser: can not acces to dashboard - administration site
+  RegularUser: can not acces to dashboard
 
 
 #only
