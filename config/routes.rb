@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   get 'home/index'
-  get 'home/hello'
+  get 'home/welcome'
 
   post 'home/saveIncome'
   post 'home/saveExit'

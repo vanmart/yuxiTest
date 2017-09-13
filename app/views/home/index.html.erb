@@ -1,6 +1,23 @@
-<h1>Wellcome to</h1>
-<p>ParkingApp </p>
+<%= render 'partials/landingbuttons' %>
 
-<% if user_signed_in? %>
-  <%= render 'partials/work' %>
-<%end%>
+
+
+
+
+
+<script>
+(function() {
+  /**
+   * Video element
+   * @type {HTMLElement}
+   */
+  var video = document.getElementById("my-video");
+
+  /**
+   * Check if video can play, and play it
+   */
+  video.addEventListener( "canplay", function() {
+    video.play();
+  });
+})();
+</script>
