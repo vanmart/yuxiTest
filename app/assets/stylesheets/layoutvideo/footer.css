@@ -1,13 +1,9 @@
 /* Set the fixed height of the footer here */
-#push,
-#footer {
-  height: 60px;
 
-}
 
 #footer {
     position: fixed;
-    height: 60px;
+    height: 33px;
     bottom: 0;
     width: 100%;
     background-color: none;

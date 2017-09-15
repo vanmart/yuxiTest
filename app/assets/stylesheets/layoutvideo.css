@@ -1,5 +1,6 @@
 /*
 =require twitter-bootstrap-static/bootstrap
+*= require toastr
 *= require font-awesome
 *= require_tree ./layoutvideo
 */

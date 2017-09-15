@@ -34,7 +34,7 @@ body {
 ============================================================================= */
 .content {
   position: relative;
-  top: 12%;
+  top: 10%;
   z-index: 2;
   margin: 0 auto;
   max-width: 80%;
@@ -52,6 +52,7 @@ body {
   color: #595959;
   font-size: 15px;
 }
+
 .margin__row{
   margin-top: 33px;
   margin-bottom: 25px;
@@ -65,6 +66,14 @@ body {
   padding-right: 10px;
 }
 
+.margin-bottom-footer{
+  margin-bottom: 144px;
+}
+
+/* =============================================================================
+  Landing buttons
+============================================================================= */
+
 .content__wy {
   display: inline-block;
   width: 100%;
@@ -75,6 +84,9 @@ body {
   font-size: 22px;
   text-decoration: none;
   margin-bottom: 3%;
+  background: none;
+  border-radius: 15px 50px;
+  margin-top: 10%;
 }
 
 .content__wy:hover {
@@ -86,8 +98,10 @@ body {
   color: #fff;
   font-size: 22px;
   text-decoration: none;
-
   margin-bottom: 3%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px 50px;
+  margin-top: 10%;
 }
 
 .content__yw {
@@ -100,6 +114,7 @@ body {
   text-decoration: none;
   border: solid 4px #fff;
   margin-bottom: 3%;
+  background: none;
 }
 
 .content__yw:hover {
@@ -112,7 +127,45 @@ body {
   text-decoration: none;
   border: solid 4px yellow;
   margin-bottom: 3%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
+
+.forms__border{
+  border: 2px solid yellow;
+  border-radius: 15px 50px;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.login__button {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  color: yellow;
+  font-size: 22px;
+  text-decoration: none;
+  border: solid 2px #fff;
+  margin-bottom: 3%;
+  background: none;
+  border-radius: 10px;
+}
+
+.login__button:hover {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  color: yellow;
+  font-size: 22px;
+  text-decoration: none;
+  border: solid 2px #fff;
+  margin-bottom: 3%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
 
 
 /* =============================================================================
@@ -134,22 +187,43 @@ body {
 
 
 
+/* =============================================================================
+  Resolutions control
+============================================================================= */
 
     /* different techniques for iPad screening */
     @media only screen and (min-width: 250px) and (max-width: 359px) {
       /* For portrait layouts only */
-      .map_dimensions{
-          width: 100%;
-          height: 300px
-        }
+      .login__button {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        color: yellow;
+        font-size: 22px;
+        text-decoration: none;
+        border: solid 2px #fff;
+        margin-bottom: 3%;
+        background: none;
+        border-radius: 15px 50px;
+      }
     }
 
     @media only screen and (min-width: 360px) and (max-width: 767px) {
       /* For portrait layouts only */
-      .map_dimensions{
-          width: 100%;
-          height: 400px
-        }
+      .login__button {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        color: yellow;
+        font-size: 22px;
+        text-decoration: none;
+        border: solid 2px #fff;
+        margin-bottom: 3%;
+        background: none;
+        border-radius: 15px 50px;
+      }
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1366px) {
@@ -171,7 +245,7 @@ body {
      @media only screen and (min-width: 1367px) {
       /* For portrait layouts only */
       .marggin__teaser {
-        margin-top: 150px;
+        margin-top: 50px;
         margin-bottom: 20px;
         padding-left: 10px;
         padding-right: 10px;
@@ -183,4 +257,6 @@ body {
 
       }
     }
+
+
 

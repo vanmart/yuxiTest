@@ -1,0 +1,27 @@
+
+  <div class="col-md-6 col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-3  forms__border">
+    <h1 style="color: yellow">Bienvenido</h1>
+    <hr>
+
+    <%= form_for('user', url: user_session_path) do |f| %>
+
+    <div class="form-group">
+      <%= f.email_field :email, autofocus: true, :class => "form-control", :placeholder => "Enter Email",:required => "required" %>
+      <small id="emailHelp" class="form-text text-muted">No compartiremos tu email con alguien más.</small>
+    </div>
+
+
+    <div class="form-group">
+      <%= f.password_field :password, autocomplete: "off", :class => 'form-control', :placeholder => "Password",:required => "required" %>
+      <small id="emailHelp" class="form-text text-muted">Nunca dibulgues tu contraseña.</small>
+    </div>
+
+    <div class="actions">
+      <%= button_tag "Edit", :type => "submit", class: "login__button" do %>
+        Entrar <%= fa_icon "sign-in"%>
+      <%end%>
+    </div>
+
+  <% end %>
+  </div>
+
